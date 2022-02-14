@@ -13,8 +13,22 @@ const p = new Promise (function (resolve,reject) {
         resolve (data);
     })
 })
-p.then (data=>{
-    console.log(db);
-    console.log(db[2]);
-})
 
+p.then (db=>{
+    const dataBase = db;
+    buildTable(dataBase)
+    function buildTable(data){
+        let table = document.querySelector('.people')
+        for (i=0; i<data.length; i++){
+            let row = 
+                `<tr>
+                    <td class="first-col">${data[i].name.firstName}</td>
+                    <td class="second-col">${data[i].name.lastName}</td>
+                    <td class="third-col">${data[i].about}</td>
+                    <td class="fourth-col">${data[i].eyeColor}</td>
+                </tr>`
+            
+        table.innerHTML += row;
+        }
+    }
+})
