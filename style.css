@@ -1,17 +1,26 @@
 .content{
     align-self: center;
     width: 50%;
-    
+}
+thead.header{
+    text-align: center;
 }
 table{
     margin: auto;
     padding: 0;
-    align-items: center;
     border: 2px solid #000;
+    border-collapse: collapse;
 }
-tr{
-    border: 1px solid black;
+thead,td{
+    padding: 10px;
+    text-align: center;
 }
 td{
     border: 1px solid black;
+}
+td.third-col{
+    text-align: justify;
+}
+#about{
+    text-align: center;
 }
