@@ -25,7 +25,7 @@ p.then (db=>{
                     <td class="first-col">${data[i].name.firstName}</td>
                     <td class="second-col">${data[i].name.lastName}</td>
                     <td class="third-col">${data[i].about}</td>
-                    <td class="fourth-col">${data[i].eyeColor}</td>
+                    <td class="fourth-col" style = "background-color: ${data[i].eyeColor}; color: white">${data[i].eyeColor}</td>
                 </tr>`
             
         table.innerHTML += row;

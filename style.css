@@ -1,15 +1,15 @@
-.content{
-    align-self: center;
-    width: 50%;
+body{
+    align-content: center;
 }
 thead.header{
     text-align: center;
 }
 table{
+    width: 50%;
     margin: auto;
-    padding: 0;
     border: 2px solid #000;
     border-collapse: collapse;
+    table-layout: fixed;
 }
 thead,td{
     padding: 10px;
